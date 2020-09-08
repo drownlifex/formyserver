@@ -26,8 +26,10 @@
     "@nestjs/graphql": "^7.6.0",
     "@nestjs/platform-express": "^7.0.0",
     "apollo-server": "^2.17.0",
+    "fast-redis-cluster2": "^2.0.11",
     "graphql": "^15.3.0",
     "graphql-tools": "^6.2.1",
+    "redis": "^3.0.2",
     "reflect-metadata": "^0.1.13",
     "rimraf": "^3.0.2",
     "rxjs": "^6.5.4"
