@@ -51,7 +51,7 @@ export class FirstMiddleware implements NestMiddleware {
       res.send("KeKieresAserPrrrrrO ╭∩╮（︶_︶）╭∩╮")
     }else if (req.headers["tokenazo"] === db){
       //TOKEN req.headers["tokenazo"]
-      console.log(req.ip)
+      console.log(req.headers['x-forwarded-for'], req.connection.remoteAddress)
       next();
 
 
