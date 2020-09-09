@@ -1,10 +1,13 @@
 import { ResolversGlobal } from './resolver/resolvers.module';
 import { Module } from '@nestjs/common';
 import { GraphQLModule } from '@nestjs/graphql';
+//import { JwtModule } from '@nestjs/jwt';
+//import { AuthService } from './services/auth/auth.service';
 
 
 @Module({
   imports: [
+    
     ResolversGlobal,
     GraphQLModule.forRoot({
       autoSchemaFile: "schema.gql",

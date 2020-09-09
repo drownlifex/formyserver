@@ -8,12 +8,14 @@ import { UseGuards } from '@nestjs/common';
 
 @UseGuards( new GalletaGuard())
 export class ResolverGraphQl_X_2{
-
+    
     @Query(returns => SchemaGraphQl2)
     secondsFunction( @Args("name" )  name: string){
 
+        //console.log("asdadasd");
         return {
             name: `Aloha ${name}`
+            
         }
 
    }
