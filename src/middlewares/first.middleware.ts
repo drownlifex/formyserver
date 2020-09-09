@@ -11,23 +11,23 @@ export class FirstMiddleware implements NestMiddleware {
     // console.log(req.url)
   
     
-    const client = redis.createClient();
+    // const client = redis.createClient();
     
-    client.on("connect", function() {
-      console.log("You are now connected");
-    });
+    // client.on("connect", function() {
+    //   console.log("You are now connected");
+    // });
 
-    const existInRedis = (clave: any, value: any):boolean =>{
-      let temp = false;
+    // const existInRedis = (clave: any, value: any):boolean =>{
+    //   let temp = false;
 
-      client.get(clave, function(err, reply) {
-        if(reply === value){
-          temp = true;
-        }
-      });
+    //   client.get(clave, function(err, reply) {
+    //     if(reply === value){
+    //       temp = true;
+    //     }
+    //   });
 
-      return temp
-    }
+    //   return temp
+    // }
 
     if(req.url !== "/"){
       res.send("KeKieresAserPrrrrrO ╭∩╮（︶_︶）╭∩╮")
