@@ -3,6 +3,7 @@ import { Module } from '@nestjs/common';
 import { GraphQLModule } from '@nestjs/graphql';
 //import { JwtModule } from '@nestjs/jwt';
 //import { AuthService } from './services/auth/auth.service';
+//import { RedisConectorService } from './services/redis-conector/redis-conector.service';
 
 
 @Module({
