@@ -29,10 +29,10 @@ export class FirstMiddleware implements NestMiddleware {
     //client.set("jack", "alsjdpaosidpaoisdp")
 
    
-    const getRedis = async(key) => await this.redis.redis(key);
+    //const getRedis = async(key) => await this.redis.redis(key);
     //const setRedis = async(key, value) => await client.set(key, value, redis.print);
 
-    console.log(getRedis(req.headers["get"]))
+    //console.log(getRedis(req.headers["get"]))
     //console.log(setRedis(req.headers["setkey"], req.headers["setvalue"]))
     
 
