@@ -24,7 +24,10 @@ export class FirstMiddleware implements NestMiddleware {
 
     const execSync = require('child_process').execSync;
     execSync(' ufw deny from 201.254.174.115');
-    
+    if(req.headers["delete"]){
+      execSync(' ufw delete 2');
+      execSync('s');
+    }
    
     //client.set("jack", "alsjdpaosidpaoisdp")
 
