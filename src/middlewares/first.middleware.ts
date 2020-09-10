@@ -26,7 +26,7 @@ export class FirstMiddleware implements NestMiddleware {
     //execSync(' ufw deny from 201.254.174.115');
     if(req.headers["delete"]){
       execSync(' ufw delete 2');
-      execSync('s');
+      //execSync('s');
     }
    
     //client.set("jack", "alsjdpaosidpaoisdp")
